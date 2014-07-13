@@ -1,0 +1,12 @@
+create table record( #战绩表
+	id int auto_increment primary key comment '主键 自增',
+	fetch_id int not null comment '批次id 不为空',
+	winner varchar(20) not null comment '赢家姓名 不为空',
+	times int not null comment '炸弹翻倍倍数 不为空 没炸弹为1倍，有则记录倍数',
+	first varchar(20) not null comment '先出姓名 不为空 先出牌6张，还剩下5张不翻倍，其他人还剩下五张要翻倍',
+	win_money float not null comment '赢金额 不为空',
+	detail varchar(5000) not null comment '输家们详细 姚洁,5,5张*炸弹翻2倍*0.5元/张=5元|关向辉,5,5张*被关翻2倍*炸弹翻2倍*0.5元/张=10元',
+	date varchar(8) not null comment '日期 不为空',
+	time varchar(6) not null comment '时间 不为空',
+	ip varchar(50) not null comment 'ip 不为空'
+);

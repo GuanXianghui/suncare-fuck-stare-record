@@ -1,0 +1,2 @@
+create database fuck_stare_record;		#Êı¾İ¿â
+use fuck_stare_record;

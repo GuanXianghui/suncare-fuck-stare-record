@@ -1,0 +1,10 @@
+create table t_fetch( #批次表
+  	id int auto_increment primary key comment '主键 自增',
+  	date varchar(8) not null comment '日期 不为空',
+  	time varchar(6) not null comment '时间 不为空',
+  	users varchar(300) comment '玩家姓名 可为空 多个人逗号分隔 比如：关向辉,林琼英,严明皓',
+  	max_times int not null comment '最大倍数 不为空 炸弹翻倍 一般是2倍，炸再多也是2倍，没炸是1倍',
+  	each_money float not null comment '每张牌价格 不为空 一般是0.5元，单位是元',
+  	pieces int not null comment '手持牌数 不为空 一般是5张',
+  	ip varchar(50) not null comment 'ip 不为空'
+  );
